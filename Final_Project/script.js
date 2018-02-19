@@ -22,3 +22,11 @@ $( "#gitHub" ).hover(
     $( this ).css( "width","1em" );
   })
 });
+
+$("#linkedIn").hover(function(){
+  $(this.linkedIn).onmouseout({
+      
+      height: '+=1em',
+      width: '+=1em'
+  });
+}); 
