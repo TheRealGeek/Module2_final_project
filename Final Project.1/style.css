@@ -1,0 +1,83 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color: lightgrey;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.main{
+  flex-grow: 1;
+}
+
+.headerContainer{
+  background-color: lightblue;
+  /* justify: center; */
+  display: flex;
+  flex-direction: column;
+
+}
+.myName,
+.myTitle{
+   /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-content:stretch;
+}
+
+.imageContainer{
+  width:auto;
+  margin: 20px;
+  /* padding: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.picOfMe{
+  height: 300px;
+  width: 300px;
+
+}
+.linkContainer{
+display: flex;
+align-items: center;
+flex-flow: column;
+}
+
+.icon.gitHub,
+.icon.linkedIn{
+  background-color: inherit;
+  height: 1em;
+  width: 1em;
+  display: flex;
+}
+.icon.gitHub:hover {
+  height: 2em;
+  width: 2em;
+}
+.icon.linkedIn:hover {
+  height: 2em;
+  width: 2em;
+}
+.techSkillsContainer{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+.contactContainer{
+  background-color: lightblue;
+  position: sticky;
+  display:flex;
+  flex-direction: column;
+
+
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
