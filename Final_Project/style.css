@@ -3,7 +3,9 @@
   padding:0;
 }
 body{
-  background-color: lightgrey;
+  height: auto;
+  background-color: #cccccc;
+  background-image: linear-gradient(black,lightblue,white);
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -13,7 +15,7 @@ body{
 }
 
 .headerContainer{
-  background-color: lightblue;
+  /* background-color: lightblue; */
   /* justify: center; */
   display: flex;
   flex-direction: column;
@@ -22,6 +24,7 @@ body{
 .myName,
 .myTitle{
    /* background-color: yellow; */
+  color: #cccccc;
   display: flex;
   justify-content: center;
   align-content:stretch;
@@ -29,7 +32,7 @@ body{
 
 .imageContainer{
   width:auto;
-  margin: 20px;
+  margin-top: 1.25em;
   /* padding: 20px; */
   display: flex;
   align-items: center;
@@ -38,43 +41,84 @@ body{
 
 }
 .picOfMe{
-  height: 300px;
-  width: 300px;
+  height: 20em;
+  width: 20em;
 
 }
 .linkContainer{
+  height: auto;
+  width: auto;
 display: flex;
+justify-content: center;
 align-items: center;
-flex-flow: column;
 }
 
-.icon.gitHub,
-.icon.linkedIn{
+.social{
+  color: black;
   background-color: inherit;
-  height: 1em;
-  width: 1em;
+  font-size: 2em;
+  margin:1em 0.25em;
   display: flex;
+  align-self: auto;
 }
-.icon.gitHub:hover {
-  height: 2em;
-  width: 2em;
-}
-.icon.linkedIn:hover {
-  height: 2em;
-  width: 2em;
+.social:hover{
+font-size: 3em;
+margin:0 0.25em;
+display:flex;
+align-self: auto;
 }
 .techSkillsContainer{
   display: flex;
   align-items: center;
   flex-flow: column;
 }
+.buttonContainer{
+  display: flex;
+  align-items: center;
+  flex-flow:column;
+}
 .contactContainer{
-  background-color: lightblue;
+  /* background-color: lightblue; */
+  margin:2em 0;
   position: sticky;
   display:flex;
-  flex-direction: column;
-
-
+  justify-content: center;
+  align-content: center;
+}
+.repoContainer{
+  display: flex;
+  align-items: center;
+  flex-flow:column;
+  margin: 2em;  
+  padding:0;
+}
+li{
+  list-style-type:none;
+  color: black;
+  
+}
+a{
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic
+}
+.contact{
+  display:flex;
+  justify-content: center; 
+  align-content: center;
+}
+.contactContainer{ 
+  position: sticky; 
+  display:flex; 
+  justify-content:center;
+}
+.email{
+  color: black;
+  background-color: inherit;
+  font-size: 100%
+}
+.email:hover{
+  font-size:125%;
 }
 .footer{
   display: flex;
