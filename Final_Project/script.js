@@ -19,7 +19,7 @@ function loadRepoCallback(gitHubRequest) {
     // console.log(repos[i].name);
     //console.log(repos[i].html_url);
     let listItems = document.createElement('li');
-    listItems.innerHTML = " <a href= " + repos[i].html_url + "' target =_blank '>" + repos[i].name + "<a>";
+    listItems.innerHTML = " <a href= " + repos[i].html_url + " target =_blank >" + repos[i].name + "<a>";
     listStarter.appendChild(listItems); 
   } //console.log(document.getElementsByClassName('listItems').innerHTML);
 }
